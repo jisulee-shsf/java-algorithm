@@ -8,9 +8,7 @@ public class String1 {
         str = str.toUpperCase();
         c = Character.toUpperCase(c);
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == c) {
-                answer++;
-            }
+            if (str.charAt(i) == c) answer++;
         }
         return answer;
     }

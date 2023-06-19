@@ -7,8 +7,18 @@ public class String1 {
         int answer = 0;
         str = str.toUpperCase();
         c = Character.toUpperCase(c);
+        /*
+        // 1. for문
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == c) answer++;
+        }
+        */
+
+        // 2. for-each문
+        for (char x : str.toCharArray()) {
+            if (x == c) {
+                answer++;
+            }
         }
         return answer;
     }
